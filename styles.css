@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+}
+
+.home {
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.sobre, .projetos, .contato, .linguagem {
+    background-color: #fff;
+    text-align: center;
+}
+
+.sobre {
+    text-align: right;
+}
+
+/* Estilos de Projetos */
+.projetos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.projeto {
+    background-color: #eaeaea;
+    padding: 20px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+}
+
+/* Formulário de Contato */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    margin: 10px;
+    padding: 10px;
+    width: 80%;
+    max-width: 500px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .projetos {
+        flex-direction: column;
+        align-items: center;
+    }
+}
