@@ -4,13 +4,11 @@
     box-sizing: border-box;
 }
 
-/* Corpo */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
     background-color: #333;
     color: white;
@@ -45,14 +43,24 @@ section {
 
 .sobre, .projetos, .contato, .linguagem {
     background-color: #fff;
-    text-align: center;
 }
 
 .sobre {
     text-align: right;
+    display: flex;
+    gap: 20px;
 }
+  
+  .texto {
+    font-size: 1.2em;
+    line-height: 1.5;
+  }
 
-/* Estilos de Projetos */
+  .imagem {
+    max-width: 50%;
+    height: auto;
+  }
+
 .projetos {
     display: flex;
     justify-content: space-around;
@@ -66,7 +74,10 @@ section {
     text-align: center;
 }
 
-/* Formulário de Contato */
+#logo {
+    size: auto;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -88,7 +99,6 @@ form button {
     cursor: pointer;
 }
 
-/* Rodapé */
 footer {
     text-align: center;
     padding: 10px 0;
@@ -96,7 +106,6 @@ footer {
     color: white;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .projetos {
         flex-direction: column;
